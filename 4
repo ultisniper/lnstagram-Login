@@ -1,0 +1,22 @@
+const form = document.getElementById("loginForm");
+const warning = document.getElementById("warning");
+const closeWarning = document.getElementById("closeWarning");
+
+form.addEventListener("submit", function(event) {
+
+  // Stop normal form submission
+  event.preventDefault();
+
+  // Show cybersecurity awareness message
+  warning.classList.remove("hidden");
+
+  // Clear the test fields without reading their values
+  form.reset();
+
+});
+
+closeWarning.addEventListener("click", function() {
+
+  warning.classList.add("hidden");
+
+});
