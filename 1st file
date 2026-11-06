@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Security Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="demo-banner">
+    CYBERSECURITY TRAINING DEMO
+  </div>
+
+  <main class="container">
+
+    <section class="login-box">
+
+      <h1 class="logo">Instagram</h1>
+
+      <p class="subtitle">
+        Sign in to see your photos and videos
+      </p>
+
+      <form id="loginForm">
+
+        <input
+          type="text"
+          placeholder="Phone number, username or email"
+          autocomplete="off"
+          required
+        >
+
+        <input
+          type="password"
+          placeholder="Password"
+          autocomplete="new-password"
+          required
+        >
+
+        <button type="submit">
+          Log in
+        </button>
+
+      </form>
+
+      <div class="or">
+        <span></span>
+        OR
+        <span></span>
+      </div>
+
+      <a href="#" class="facebook">
+        Log in with Facebook
+      </a>
+
+      <a href="#" class="forgot">
+        Forgot password?
+      </a>
+
+    </section>
+
+    <section class="signup-box">
+      Don't have an account?
+      <a href="#">Sign up</a>
+    </section>
+
+    <p class="disclaimer">
+      This is an independent cybersecurity training simulation.
+      It is not affiliated with Instagram or Meta.
+    </p>
+
+  </main>
+
+  <div id="warning" class="warning hidden">
+    <div class="warning-card">
+
+      <h2>⚠ Phishing Awareness</h2>
+
+      <p>
+        You have completed the demonstration.
+      </p>
+
+      <p>
+        Real phishing websites imitate trusted platforms
+        to trick people into revealing their passwords.
+      </p>
+
+      <p>
+        Always check the website address before logging in.
+      </p>
+
+      <button id="closeWarning">
+        Close
+      </button>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
